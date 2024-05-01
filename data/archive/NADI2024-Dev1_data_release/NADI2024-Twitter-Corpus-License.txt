@@ -1,0 +1,17 @@
+//////////////////////////////////////////////////////////////////////
+// License for NADI-2024 Dataset
+//////////////////////////////////////////////////////////////////////
+
+Copyright 2024 The University of British Columbia, Canada. All Rights Reserved.
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-
+NoDerivatives 4.0 International License.
+(https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+If you use this resource, cite:
+
+Muhammad Abdul-Mageed, Abdelrahim Elmadany, Amr Keleg, Chiyu Zhang, Houda Bouamor, and Nizar Habash.
+The Fifth Nuanced Arabic Dialect Identification Shared Task.
+
+Please note that the final bibliographic entry for the Shared Task Overview paper to be cited will be available upon the publication of ArabicNLP 2024 proceedings.
+//////////////////////////////////////////////////////////////////////
