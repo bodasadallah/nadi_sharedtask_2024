@@ -4,9 +4,9 @@ import pyarabic.araby as araby
 
 
 
-DEFAULT_ARABIC_SYSTEM_PROMPT = f'''
-The following is a sentence in {dialect} Arabic dialect. Please translate it to Modern Standard Arabic (MSA).
-'''.strip()
+# DEFAULT_ARABIC_SYSTEM_PROMPT = '''
+# The following is a sentence in {dialect} Arabic dialect. Please translate it to Modern Standard Arabic (MSA).
+# '''.strip()
 
 
 def clean_text(text):
@@ -41,6 +41,10 @@ def generate_arabic_training_prompt(example, field='prompt', train=True):
     source = example['source']
     target = example['target']
     dialect = example['dialect']
+
+    DEFAULT_ARABIC_SYSTEM_PROMPT = '''
+    The following is a sentence in {dialect} Arabic dialect. Please translate it to Modern Standard Arabic (MSA).
+    '''.strip()
 
     DEFAULT_ARABIC_SYSTEM_PROMPT = DEFAULT_ARABIC_SYSTEM_PROMPT.format(dialect=dialect)
 

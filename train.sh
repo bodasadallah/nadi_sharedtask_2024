@@ -40,5 +40,6 @@ python finetune.py \
 --weight_decay=0.01 \
 --learning_rate=1e-06 \
 --use_flash_attention_2=False \
---prompt_key="prompt" \
+--prompt_key="prompt" 
+
 echo "ending "

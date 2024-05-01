@@ -77,6 +77,19 @@ def main():
     # model = AutoModel.from_pretrained(model_args.model_name_or_path)
 
 
+
+    print("Loading the datasets")
+    train_dataset = get_dataset(
+        dataset_name = data_args.dataset,
+        split='train',
+        field=data_args.prompt_key)
+        
+    val_dataset = get_dataset(
+        dataset_name = data_args.dataset,
+        split='dev',
+        field=data_args.prompt_key,)
+
+
     ## Bits and Bytes config
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
@@ -96,16 +109,6 @@ def main():
 
 
 
-    print("Loading the datasets")
-    train_dataset = get_dataset(
-        dataset_path = data_args.dataset,
-        split='train',
-        field=data_args.prompt_key)
-        
-    val_dataset = get_dataset(
-        dataset_path = data_args.dataset,
-        split='validation',
-        field=data_args.prompt_key,)
 
    
     save_path = f'{training_args.output_dir}/{model_args.model_name_or_path}'

@@ -1,0 +1,30 @@
+
+Loading the datasets
+Downloading readme: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 702/702 [00:00<00:00, 1.78MB/s]
+Downloading data: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3.88M/3.88M [00:01<00:00, 3.79MB/s]
+Downloading data: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 75.9k/75.9k [00:00<00:00, 140kB/s]
+Downloading data: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 182k/182k [00:00<00:00, 334kB/s]
+Generating train split: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 52807/52807 [00:00<00:00, 57141.73 examples/s]
+Generating dev split: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:00<00:00, 121433.24 examples/s]
+Generating test split: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2000/2000 [00:00<00:00, 19375.82 examples/s]
+Map:   0%|                                                                                                                                                                                                                                                                                                           | 0/52807 [00:00<?, ? examples/s]
+Traceback (most recent call last):
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/finetune.py", line 163, in <module>
+    main()
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/finetune.py", line 82, in main
+    train_dataset = get_dataset(
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/utils.py", line 74, in get_dataset
+    dataset = dataset.map(generate_arabic_training_prompt, fn_kwargs={'field': field, 'train': split == 'train'})
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 602, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 567, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3156, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3517, in _map_single
+    example = apply_function_on_filtered_inputs(example, i, offset=offset)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 3416, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/utils.py", line 45, in generate_arabic_training_prompt
+    DEFAULT_ARABIC_SYSTEM_PROMPT = DEFAULT_ARABIC_SYSTEM_PROMPT.format(dialect=dialect)
+UnboundLocalError: local variable 'DEFAULT_ARABIC_SYSTEM_PROMPT' referenced before assignment

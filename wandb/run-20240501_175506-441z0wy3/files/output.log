@@ -1,0 +1,34 @@
+
+Loading the datasets
+
+Map: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 52807/52807 [00:02<00:00, 21171.25 examples/s]
+Traceback (most recent call last):
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/finetune.py", line 163, in <module>
+    main()
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/finetune.py", line 87, in main
+    val_dataset = get_dataset(
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/utils.py", line 76, in get_dataset
+    dataset = load_dataset(dataset_name,split=split)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/load.py", line 2621, in load_dataset
+    ds = builder_instance.as_dataset(split=split, verification_mode=verification_mode, in_memory=keep_in_memory)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/builder.py", line 1266, in as_dataset
+    datasets = map_nested(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/utils/py_utils.py", line 481, in map_nested
+    mapped = function(data_struct)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/builder.py", line 1296, in _build_single_dataset
+    ds = self._as_dataset(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/builder.py", line 1370, in _as_dataset
+    dataset_kwargs = ArrowReader(cache_dir, self.info).read(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/arrow_reader.py", line 252, in read
+    files = self.get_file_instructions(name, instructions, split_infos)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/arrow_reader.py", line 225, in get_file_instructions
+    file_instructions = make_file_instructions(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/arrow_reader.py", line 134, in make_file_instructions
+    absolute_instructions = instruction.to_absolute(name2len)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/arrow_reader.py", line 663, in to_absolute
+    return [_rel_to_abs_instr(rel_instr, name2len) for rel_instr in self._relative_instructions]
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/arrow_reader.py", line 663, in <listcomp>
+    return [_rel_to_abs_instr(rel_instr, name2len) for rel_instr in self._relative_instructions]
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/datasets/arrow_reader.py", line 480, in _rel_to_abs_instr
+    raise ValueError(f'Unknown split "{split}". Should be one of {list(name2len)}.')
+ValueError: Unknown split "validation". Should be one of ['train', 'dev', 'test'].
