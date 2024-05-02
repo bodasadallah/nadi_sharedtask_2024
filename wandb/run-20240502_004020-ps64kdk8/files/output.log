@@ -1,0 +1,30 @@
+
+Loading the datasets
+`low_cpu_mem_usage` was None, now set to True since model is quantized.
+
+
+
+
+
+
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [19:53<00:00, 198.97s/it]
+Map: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 400/400 [00:00<00:00, 4535.34 examples/s]
+Detected kernel version 5.4.204, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Traceback (most recent call last):
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/finetune.py", line 163, in <module>
+    main()
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/finetune.py", line 150, in main
+    trainer.train()
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/trainer.py", line 1875, in train
+    return inner_training_loop(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/trainer.py", line 2137, in _inner_training_loop
+    self.control = self.callback_handler.on_train_begin(args, self.state, self.control)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/trainer_callback.py", line 454, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/trainer_callback.py", line 498, in call_event
+    result = getattr(callback, event)(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/trainer_callback.py", line 667, in on_train_begin
+    assert args.load_best_model_at_end, "EarlyStoppingCallback requires load_best_model_at_end = True"
+AssertionError: EarlyStoppingCallback requires load_best_model_at_end = True

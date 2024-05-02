@@ -53,3 +53,11 @@ class DataArguments:
         default=None,
         metadata={"help": "The name of text field in the dataset"},
     )
+    split: Optional[str] = field(
+        default='train',
+        metadata={"help": "The name of text field in the dataset"},
+    )
+    chunk_size: Optional[int] = field(
+        default=100,
+        metadata={"help": "size of each dialect"},
+    )

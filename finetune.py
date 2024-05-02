@@ -26,7 +26,7 @@ from arguments import ModelArguments, DataArguments
 import wandb
 from nltk.tokenize import sent_tokenize
 import nltk
-from evaluate import load
+
 
 nltk.download("punkt")
 logger = logging.getLogger(__name__)
@@ -40,7 +40,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, AutoTokenizer
 from transformers import TrainingArguments
 from trl import SFTTrainer
-from evaluate import load
+
 from peft import LoraConfig, prepare_model_for_kbit_training
 
 import re
@@ -94,8 +94,7 @@ def main():
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
-        # bnb_4bit_compute_dtype=torch.float16,
-        bnb_4bit_compute_dtype=torch.bfloat16,
+        bnb_4bit_compute_dtype=torch.float16,
         bnb_4bit_use_double_quant=False
     )
     model = AutoModelForCausalLM.from_pretrained(

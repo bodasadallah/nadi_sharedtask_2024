@@ -1,0 +1,18 @@
+
+Loading the datasets
+`low_cpu_mem_usage` was None, now set to True since model is quantized.
+The model was loaded with use_flash_attention_2=True, which is deprecated and may be removed in a future release. Please use `attn_implementation="flash_attention_2"` instead.
+Traceback (most recent call last):
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/finetune.py", line 163, in <module>
+    main()
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/finetune.py", line 101, in main
+    model = AutoModelForCausalLM.from_pretrained(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 558, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3549, in from_pretrained
+    config = cls._autoset_attn_implementation(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1456, in _autoset_attn_implementation
+    cls._check_and_enable_flash_attn_2(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1537, in _check_and_enable_flash_attn_2
+    raise ValueError(
+ValueError: JAISLMHeadModel does not support Flash Attention 2.0 yet. Please request to add support where the model is hosted, on its model hub page: https://huggingface.co/core42/jais-13b/discussions/new or in the Transformers GitHub repo: https://github.com/huggingface/transformers/issues/new
