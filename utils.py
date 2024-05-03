@@ -42,6 +42,9 @@ def generate_arabic_training_prompt(example, field='prompt', train=True):
     target = example['target']
     dialect = example['dialect']
 
+    if '_' in dialect:
+        dialect = dialect.split('_')[0]
+
     DEFAULT_ARABIC_SYSTEM_PROMPT = '''
     The following is a sentence in {dialect} Arabic dialect. Please translate it to Modern Standard Arabic (MSA).
     '''.strip()

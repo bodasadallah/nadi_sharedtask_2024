@@ -1,0 +1,110 @@
+
+Loading the datasets
+A new version of the following files was downloaded from https://huggingface.co/core42/jais-13b-chat:
+- configuration_jais.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+A new version of the following files was downloaded from https://huggingface.co/core42/jais-13b-chat:
+- modeling_jais.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+`low_cpu_mem_usage` was None, now set to True since model is quantized.
+
+
+
+
+
+Downloading shards: 100%|██████████| 6/6 [05:02<00:00, 50.38s/it]
+
+
+
+
+
+Loading checkpoint shards: 100%|██████████| 6/6 [01:01<00:00, 10.28s/it]
+/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/training_args.py:1463: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+
+Map: 100%|██████████| 52807/52807 [00:04<00:00, 12595.95 examples/s]
+Map: 100%|██████████| 400/400 [00:00<00:00, 4910.08 examples/s]
+Detected kernel version 5.4.204, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+max_steps is given, it will override any value given in num_train_epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  0%|          | 79/100000 [02:19<43:35:28,  1.57s/it]Traceback (most recent call last):
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/finetune.py", line 162, in <module>
+    main()
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/finetune.py", line 149, in main
+    trainer.train()
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/trainer.py", line 1875, in train
+    return inner_training_loop(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/trainer.py", line 2206, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/trainer.py", line 3182, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/trainer.py", line 3205, in compute_loss
+    outputs = model(**inputs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/peft/peft_model.py", line 1003, in forward
+    return self.base_model(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 107, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/l/users/abdelrahman.sadallah/modules/transformers_modules/core42/jais-13b-chat/d48ede08ac34ac0addd52987b7af473caea3cc25/modeling_jais.py", line 1151, in forward
+    loss = loss_fct(shift_logits.view(-1, shift_logits.size(-1)), shift_labels.view(-1))
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 1179, in forward
+    return F.cross_entropy(input, target, weight=self.weight,
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/functional.py", line 3059, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 240.00 MiB. GPU 0 has a total capacity of 39.59 GiB of which 158.62 MiB is free. Process 213828 has 2.78 GiB memory in use. Process 214714 has 2.63 GiB memory in use. Process 215436 has 2.63 GiB memory in use. Including non-PyTorch memory, this process has 31.39 GiB memory in use. Of the allocated memory 29.36 GiB is allocated by PyTorch, and 526.68 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

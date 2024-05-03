@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/utils/hub.py", line 398, in cached_file
+    resolved_file = hf_hub_download(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 111, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 165, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.utils._validators.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: ''.
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/finetune.py", line 162, in <module>
+    main()
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/finetune.py", line 73, in main
+    tokenizer = AutoTokenizer.from_pretrained(model_args.model_name_or_path)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 805, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 638, in get_tokenizer_config
+    resolved_config_file = cached_file(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/utils/hub.py", line 462, in cached_file
+    raise EnvironmentError(
+OSError: Incorrect path_or_model_id: ''. Please provide either the path to a local folder or the repo_id of a model on the Hub.

@@ -1,0 +1,176 @@
+model_name_or_path core42/jais-13b-chat
+wandb_project nadi_sharedtask
+wandb_run_name jais
+use_flash_attention_2 False
+checkpoint_path None
+save_file None
+dataset boda/nadi2024
+prompt_key prompt
+split train
+chunk_size 100
+output_dir /l/users/abdelrahman.sadallah/nadi
+overwrite_output_dir False
+do_train False
+do_eval True
+do_predict False
+eval_strategy IntervalStrategy.STEPS
+prediction_loss_only False
+per_device_train_batch_size 2
+per_device_eval_batch_size 2
+per_gpu_train_batch_size None
+per_gpu_eval_batch_size None
+gradient_accumulation_steps 4
+eval_accumulation_steps None
+eval_delay 0
+learning_rate 0.0001
+weight_decay 0.01
+adam_beta1 0.9
+adam_beta2 0.999
+adam_epsilon 1e-08
+max_grad_norm 1.0
+num_train_epochs 3.0
+max_steps 10000
+lr_scheduler_type SchedulerType.LINEAR
+lr_scheduler_kwargs {}
+warmup_ratio 0.03
+warmup_steps 0
+log_level passive
+log_level_replica warning
+log_on_each_node True
+logging_dir /l/users/abdelrahman.sadallah/nadi/runs/May03_14-10-05_gpu-12
+logging_strategy IntervalStrategy.STEPS
+logging_first_step False
+logging_steps 100
+logging_nan_inf_filter True
+save_strategy IntervalStrategy.STEPS
+save_steps 500
+save_total_limit 3
+save_safetensors True
+save_on_each_node False
+save_only_model False
+restore_callback_states_from_checkpoint False
+no_cuda False
+use_cpu False
+use_mps_device False
+seed 42
+data_seed None
+jit_mode_eval False
+use_ipex False
+bf16 False
+fp16 False
+fp16_opt_level O1
+half_precision_backend auto
+bf16_full_eval False
+fp16_full_eval False
+tf32 None
+local_rank 0
+ddp_backend None
+tpu_num_cores None
+tpu_metrics_debug False
+debug []
+dataloader_drop_last False
+eval_steps 500
+dataloader_num_workers 0
+dataloader_prefetch_factor None
+past_index -1
+run_name /l/users/abdelrahman.sadallah/nadi
+disable_tqdm False
+remove_unused_columns True
+label_names None
+load_best_model_at_end True
+metric_for_best_model loss
+greater_is_better False
+ignore_data_skip False
+fsdp []
+fsdp_min_num_params 0
+fsdp_config {'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False}
+fsdp_transformer_layer_cls_to_wrap None
+accelerator_config AcceleratorConfig(split_batches=False, dispatch_batches=None, even_batches=True, use_seedable_sampler=True, non_blocking=False, gradient_accumulation_kwargs=None)
+deepspeed None
+label_smoothing_factor 0.0
+optim OptimizerNames.ADAMW_TORCH
+optim_args None
+adafactor False
+group_by_length False
+length_column_name length
+report_to ['tensorboard', 'wandb']
+ddp_find_unused_parameters None
+ddp_bucket_cap_mb None
+ddp_broadcast_buffers None
+dataloader_pin_memory True
+dataloader_persistent_workers False
+skip_memory_metrics True
+use_legacy_prediction_loop False
+push_to_hub False
+resume_from_checkpoint None
+hub_model_id None
+hub_strategy HubStrategy.EVERY_SAVE
+hub_token None
+hub_private_repo False
+hub_always_push False
+gradient_checkpointing False
+gradient_checkpointing_kwargs None
+include_inputs_for_metrics False
+eval_do_concat_batches True
+fp16_backend auto
+evaluation_strategy steps
+push_to_hub_model_id None
+push_to_hub_organization None
+push_to_hub_token None
+mp_parameters 
+auto_find_batch_size False
+full_determinism False
+torchdynamo None
+ray_scope last
+ddp_timeout 1800
+torch_compile False
+torch_compile_backend None
+torch_compile_mode None
+dispatch_batches None
+split_batches None
+include_tokens_per_second False
+include_num_input_tokens_seen False
+neftune_noise_alpha None
+optim_target_modules None
+sortish_sampler False
+predict_with_generate False
+generation_max_length None
+generation_num_beams None
+generation_config None
+distributed_state Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+_n_gpu 1
+__cached__setup_devices cuda:0
+deepspeed_plugin None
+Loading the datasets
+{'loss': 3.145, 'grad_norm': 0.5432174205780029, 'learning_rate': 3.3333333333333335e-05, 'epoch': 0.02}
+{'loss': 1.2071, 'grad_norm': 0.27759966254234314, 'learning_rate': 6.666666666666667e-05, 'epoch': 0.03}
+{'loss': 1.0869, 'grad_norm': 0.2485560178756714, 'learning_rate': 0.0001, 'epoch': 0.05}
+{'loss': 1.0307, 'grad_norm': 0.2516325116157532, 'learning_rate': 9.896907216494846e-05, 'epoch': 0.06}
+{'loss': 1.0117, 'grad_norm': 0.2145269364118576, 'learning_rate': 9.793814432989691e-05, 'epoch': 0.08}
+{'eval_loss': 2.903271198272705, 'eval_runtime': 82.459, 'eval_samples_per_second': 4.851, 'eval_steps_per_second': 2.425, 'epoch': 0.08}
+{'loss': 0.9755, 'grad_norm': 0.23036357760429382, 'learning_rate': 9.690721649484537e-05, 'epoch': 0.09}
+{'loss': 0.9673, 'grad_norm': 0.23483669757843018, 'learning_rate': 9.587628865979382e-05, 'epoch': 0.11}
+{'loss': 0.9795, 'grad_norm': 0.2617969214916229, 'learning_rate': 9.484536082474227e-05, 'epoch': 0.12}
+{'loss': 0.9334, 'grad_norm': 0.3063158392906189, 'learning_rate': 9.381443298969073e-05, 'epoch': 0.14}
+{'loss': 0.9511, 'grad_norm': 0.28720515966415405, 'learning_rate': 9.278350515463918e-05, 'epoch': 0.15}
+{'eval_loss': 2.9802188873291016, 'eval_runtime': 82.2402, 'eval_samples_per_second': 4.864, 'eval_steps_per_second': 2.432, 'epoch': 0.15}
+{'loss': 0.9351, 'grad_norm': 0.30365604162216187, 'learning_rate': 9.175257731958763e-05, 'epoch': 0.17}
+{'loss': 0.9018, 'grad_norm': 0.33697816729545593, 'learning_rate': 9.072164948453609e-05, 'epoch': 0.18}
+{'loss': 0.8982, 'grad_norm': 0.31319016218185425, 'learning_rate': 8.969072164948454e-05, 'epoch': 0.2}
+{'loss': 0.9139, 'grad_norm': 0.31725382804870605, 'learning_rate': 8.865979381443299e-05, 'epoch': 0.21}
+{'loss': 0.9232, 'grad_norm': 0.33271023631095886, 'learning_rate': 8.762886597938145e-05, 'epoch': 0.23}
+{'eval_loss': 3.008007526397705, 'eval_runtime': 82.2129, 'eval_samples_per_second': 4.865, 'eval_steps_per_second': 2.433, 'epoch': 0.23}
+{'loss': 0.9057, 'grad_norm': 0.332526832818985, 'learning_rate': 8.65979381443299e-05, 'epoch': 0.24}
+{'loss': 0.8763, 'grad_norm': 0.3494655191898346, 'learning_rate': 8.556701030927835e-05, 'epoch': 0.26}
+{'loss': 0.8775, 'grad_norm': 0.3509408235549927, 'learning_rate': 8.453608247422681e-05, 'epoch': 0.27}
+{'loss': 0.9001, 'grad_norm': 0.2952110767364502, 'learning_rate': 8.350515463917527e-05, 'epoch': 0.29}
+{'loss': 0.8741, 'grad_norm': 0.3626924157142639, 'learning_rate': 8.247422680412371e-05, 'epoch': 0.3}
+{'eval_loss': 3.0375261306762695, 'eval_runtime': 82.2061, 'eval_samples_per_second': 4.866, 'eval_steps_per_second': 2.433, 'epoch': 0.3}
+{'train_runtime': 6571.4129, 'train_samples_per_second': 12.174, 'train_steps_per_second': 1.522, 'train_loss': 1.06470072555542, 'epoch': 0.3}
+Training completed. Model saved. at  /l/users/abdelrahman.sadallah/nadi/core42/jais-13b-chat
+ending 

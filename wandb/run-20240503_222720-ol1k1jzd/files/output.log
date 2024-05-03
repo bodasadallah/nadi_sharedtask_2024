@@ -1,0 +1,68 @@
+
+Loading the datasets
+Map:   0%|          | 0/52807 [00:00<?, ? examples/s]/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:3922: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Map: 100%|██████████| 52807/52807 [00:29<00:00, 1804.33 examples/s]
+Map: 100%|██████████| 400/400 [00:00<00:00, 724.25 examples/s]
+Detected kernel version 5.4.204, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+max_steps is given, it will override any value given in num_train_epochs
+  0%|          | 0/5000 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/arat5.py", line 158, in <module>
+    main()
+  File "/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/arat5.py", line 145, in main
+    history = trainer.train()
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/trainer.py", line 1875, in train
+    return inner_training_loop(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/trainer.py", line 2206, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/trainer.py", line 3182, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/trainer.py", line 3205, in compute_loss
+    outputs = model(**inputs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 1742, in forward
+    decoder_outputs = self.decoder(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 1109, in forward
+    layer_outputs = layer_module(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 689, in forward
+    self_attention_outputs = self.layer[0](
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 596, in forward
+    attention_output = self.SelfAttention(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 567, in forward
+    attn_output = unshape(torch.matmul(attn_weights, value_states))  # (batch_size, seq_length, dim)
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/transformers/models/t5/modeling_t5.py", line 485, in unshape
+    return states.transpose(1, 2).contiguous().view(batch_size, -1, self.inner_dim)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 48.00 MiB. GPU 0 has a total capacity of 39.59 GiB of which 28.62 MiB is free. Process 1963389 has 3.24 GiB memory in use. Including non-PyTorch memory, this process has 36.32 GiB memory in use. Of the allocated memory 34.60 GiB is allocated by PyTorch, and 216.50 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

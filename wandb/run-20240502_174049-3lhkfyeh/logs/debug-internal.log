@@ -1,0 +1,515 @@
+2024-05-02 17:40:49,783 INFO    StreamThr :237128 [internal.py:wandb_internal():86] W&B internal server running at pid: 237128, started at: 2024-05-02 17:40:49.782610
+2024-05-02 17:40:49,784 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status
+2024-05-02 17:40:49,786 INFO    WriterThread:237128 [datastore.py:open_for_write():85] open: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/run-3lhkfyeh.wandb
+2024-05-02 17:40:49,789 DEBUG   SenderThread:237128 [sender.py:send():380] send: header
+2024-05-02 17:40:49,805 DEBUG   SenderThread:237128 [sender.py:send():380] send: run
+2024-05-02 17:40:50,428 INFO    SenderThread:237128 [dir_watcher.py:__init__():211] watching files in: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files
+2024-05-02 17:40:50,428 INFO    SenderThread:237128 [sender.py:_start_run_threads():1122] run started: 3lhkfyeh with start time 1714657249.783495
+2024-05-02 17:40:50,436 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: check_version
+2024-05-02 17:40:50,436 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: check_version
+2024-05-02 17:40:50,548 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: run_start
+2024-05-02 17:40:50,558 DEBUG   HandlerThread:237128 [system_info.py:__init__():32] System info init
+2024-05-02 17:40:50,558 DEBUG   HandlerThread:237128 [system_info.py:__init__():47] System info init done
+2024-05-02 17:40:50,558 INFO    HandlerThread:237128 [system_monitor.py:start():194] Starting system monitor
+2024-05-02 17:40:50,559 INFO    SystemMonitor:237128 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-02 17:40:50,560 INFO    HandlerThread:237128 [system_monitor.py:probe():214] Collecting system info
+2024-05-02 17:40:50,560 INFO    SystemMonitor:237128 [interfaces.py:start():190] Started cpu monitoring
+2024-05-02 17:40:50,561 INFO    SystemMonitor:237128 [interfaces.py:start():190] Started disk monitoring
+2024-05-02 17:40:50,562 INFO    SystemMonitor:237128 [interfaces.py:start():190] Started gpu monitoring
+2024-05-02 17:40:50,564 INFO    SystemMonitor:237128 [interfaces.py:start():190] Started memory monitoring
+2024-05-02 17:40:50,564 INFO    SystemMonitor:237128 [interfaces.py:start():190] Started network monitoring
+2024-05-02 17:40:50,704 DEBUG   HandlerThread:237128 [system_info.py:probe():196] Probing system
+2024-05-02 17:40:50,706 DEBUG   HandlerThread:237128 [system_info.py:_probe_git():181] Probing git
+2024-05-02 17:40:50,728 DEBUG   HandlerThread:237128 [system_info.py:_probe_git():189] Probing git done
+2024-05-02 17:40:50,728 DEBUG   HandlerThread:237128 [system_info.py:probe():244] Probing system done
+2024-05-02 17:40:50,728 DEBUG   HandlerThread:237128 [system_monitor.py:probe():223] {'os': 'Linux-5.4.204-ql-generic-12.0-19-x86_64-with-glibc2.31', 'python': '3.10.12', 'heartbeatAt': '2024-05-02T13:40:50.704834', 'startedAt': '2024-05-02T13:40:49.768213', 'docker': None, 'cuda': None, 'args': ('--output_dir=/l/users/abdelrahman.sadallah/nadi', '--model_name_or_path=core42/jais-13b-chat', '--wandb_project=nadi_sharedtask', '--wandb_run_name=jais', '--dataset', 'boda/nadi2024', '--evaluation_strategy', 'steps', '--max_steps', '100000', '--save_steps=500', '--eval_steps=500', '--logging_steps=100', '--report_to=all', '--load_best_model_at_end', 'True', '--save_total_limit', '3', '--per_device_train_batch_size=4', '--per_device_eval_batch_size=4', '--metric_for_best_model', 'loss', '--warmup_ratio=0.07', '--weight_decay=0.01', '--learning_rate=1e-06', '--use_flash_attention_2=False', '--prompt_key=prompt'), 'state': 'running', 'program': '/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/finetune.py', 'codePathLocal': 'finetune.py', 'codePath': 'finetune.py', 'git': {'remote': 'git@github.com:bodasadallah/nadi_sharedtask_2024.git', 'commit': 'ffecf2b641599f3baa5a08a5e2d36ae80da14494'}, 'email': 'boda998@yahoo.com', 'root': '/home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024', 'host': 'gpu-11', 'username': 'abdelrahman.sadallah', 'executable': '/home/abdelrahman.sadallah/mambaforge/envs/nlp/bin/python', 'cpu_count': 128, 'cpu_count_logical': 256, 'cpu_freq': {'current': 1549.3651093750002, 'min': 1500.0, 'max': 2250.0}, 'cpu_freq_per_core': [{'current': 1499.998, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.942, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.863, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.875, 'min': 1500.0, 'max': 2250.0}, {'current': 1673.461, 'min': 1500.0, 'max': 2250.0}, {'current': 1433.46, 'min': 1500.0, 'max': 2250.0}, {'current': 1439.67, 'min': 1500.0, 'max': 2250.0}, {'current': 1395.311, 'min': 1500.0, 'max': 2250.0}, {'current': 2024.479, 'min': 1500.0, 'max': 2250.0}, {'current': 1992.109, 'min': 1500.0, 'max': 2250.0}, {'current': 1502.204, 'min': 1500.0, 'max': 2250.0}, {'current': 1335.111, 'min': 1500.0, 'max': 2250.0}, {'current': 1431.175, 'min': 1500.0, 'max': 2250.0}, {'current': 1681.741, 'min': 1500.0, 'max': 2250.0}, {'current': 1681.193, 'min': 1500.0, 'max': 2250.0}, {'current': 1435.248, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.859, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.867, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.915, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.888, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.865, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.897, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.841, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.899, 'min': 1500.0, 'max': 2250.0}, {'current': 1379.574, 'min': 1500.0, 'max': 2250.0}, {'current': 1411.479, 'min': 1500.0, 'max': 2250.0}, {'current': 1416.889, 'min': 1500.0, 'max': 2250.0}, {'current': 1767.808, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.919, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.924, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.905, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.811, 'min': 1500.0, 'max': 2250.0}, {'current': 1500.007, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.911, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.956, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.963, 'min': 1500.0, 'max': 2250.0}, {'current': 1604.146, 'min': 1500.0, 'max': 2250.0}, {'current': 1989.887, 'min': 1500.0, 'max': 2250.0}, {'current': 1336.537, 'min': 1500.0, 'max': 2250.0}, {'current': 1545.412, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.964, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.885, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.959, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.981, 'min': 1500.0, 'max': 2250.0}, {'current': 1333.284, 'min': 1500.0, 'max': 2250.0}, {'current': 1999.952, 'min': 1500.0, 'max': 2250.0}, {'current': 1333.0, 'min': 1500.0, 'max': 2250.0}, {'current': 1988.319, 'min': 1500.0, 'max': 2250.0}, {'current': 3397.096, 'min': 1500.0, 'max': 2250.0}, {'current': 1510.991, 'min': 1500.0, 'max': 2250.0}, {'current': 1775.459, 'min': 1500.0, 'max': 2250.0}, {'current': 1510.987, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.698, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.911, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.902, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.897, 'min': 1500.0, 'max': 2250.0}, {'current': 1418.475, 'min': 1500.0, 'max': 2250.0}, {'current': 1576.638, 'min': 1500.0, 'max': 2250.0}, {'current': 1425.862, 'min': 1500.0, 'max': 2250.0}, {'current': 1423.831, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.839, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.817, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.837, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.704, 'min': 1500.0, 'max': 2250.0}, {'current': 1997.01, 'min': 1500.0, 'max': 2250.0}, {'current': 1997.144, 'min': 1500.0, 'max': 2250.0}, {'current': 1997.227, 'min': 1500.0, 'max': 2250.0}, {'current': 1997.109, 'min': 1500.0, 'max': 2250.0}, {'current': 1997.028, 'min': 1500.0, 'max': 2250.0}, {'current': 1331.704, 'min': 1500.0, 'max': 2250.0}, {'current': 1997.066, 'min': 1500.0, 'max': 2250.0}, {'current': 1997.241, 'min': 1500.0, 'max': 2250.0}, {'current': 1997.239, 'min': 1500.0, 'max': 2250.0}, {'current': 1996.82, 'min': 1500.0, 'max': 2250.0}, {'current': 1783.654, 'min': 1500.0, 'max': 2250.0}, {'current': 1996.783, 'min': 1500.0, 'max': 2250.0}, {'current': 2334.99, 'min': 1500.0, 'max': 2250.0}, {'current': 1995.593, 'min': 1500.0, 'max': 2250.0}, {'current': 1995.827, 'min': 1500.0, 'max': 2250.0}, {'current': 1995.64, 'min': 1500.0, 'max': 2250.0}, {'current': 1996.197, 'min': 1500.0, 'max': 2250.0}, {'current': 1344.705, 'min': 1500.0, 'max': 2250.0}, {'current': 1996.525, 'min': 1500.0, 'max': 2250.0}, {'current': 1781.838, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.396, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.575, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.535, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.595, 'min': 1500.0, 'max': 2250.0}, {'current': 1997.084, 'min': 1500.0, 'max': 2250.0}, {'current': 1345.034, 'min': 1500.0, 'max': 2250.0}, {'current': 1345.205, 'min': 1500.0, 'max': 2250.0}, {'current': 1345.255, 'min': 1500.0, 'max': 2250.0}, {'current': 1331.715, 'min': 1500.0, 'max': 2250.0}, {'current': 1331.824, 'min': 1500.0, 'max': 2250.0}, {'current': 1331.873, 'min': 1500.0, 'max': 2250.0}, {'current': 1997.199, 'min': 1500.0, 'max': 2250.0}, {'current': 1515.41, 'min': 1500.0, 'max': 2250.0}, {'current': 1334.896, 'min': 1500.0, 'max': 2250.0}, {'current': 1982.754, 'min': 1500.0, 'max': 2250.0}, {'current': 1989.337, 'min': 1500.0, 'max': 2250.0}, {'current': 1989.927, 'min': 1500.0, 'max': 2250.0}, {'current': 1334.805, 'min': 1500.0, 'max': 2250.0}, {'current': 1989.911, 'min': 1500.0, 'max': 2250.0}, {'current': 1992.242, 'min': 1500.0, 'max': 2250.0}, {'current': 1335.157, 'min': 1500.0, 'max': 2250.0}, {'current': 1988.752, 'min': 1500.0, 'max': 2250.0}, {'current': 1988.92, 'min': 1500.0, 'max': 2250.0}, {'current': 1588.287, 'min': 1500.0, 'max': 2250.0}, {'current': 1992.803, 'min': 1500.0, 'max': 2250.0}, {'current': 1988.654, 'min': 1500.0, 'max': 2250.0}, {'current': 1990.575, 'min': 1500.0, 'max': 2250.0}, {'current': 1566.732, 'min': 1500.0, 'max': 2250.0}, {'current': 1987.567, 'min': 1500.0, 'max': 2250.0}, {'current': 1333.318, 'min': 1500.0, 'max': 2250.0}, {'current': 1987.478, 'min': 1500.0, 'max': 2250.0}, {'current': 2000.031, 'min': 1500.0, 'max': 2250.0}, {'current': 1987.874, 'min': 1500.0, 'max': 2250.0}, {'current': 1987.98, 'min': 1500.0, 'max': 2250.0}, {'current': 1990.332, 'min': 1500.0, 'max': 2250.0}, {'current': 1987.86, 'min': 1500.0, 'max': 2250.0}, {'current': 1334.93, 'min': 1500.0, 'max': 2250.0}, {'current': 1987.476, 'min': 1500.0, 'max': 2250.0}, {'current': 1987.239, 'min': 1500.0, 'max': 2250.0}, {'current': 1335.804, 'min': 1500.0, 'max': 2250.0}, {'current': 1511.04, 'min': 1500.0, 'max': 2250.0}, {'current': 1929.501, 'min': 1500.0, 'max': 2250.0}, {'current': 1934.806, 'min': 1500.0, 'max': 2250.0}, {'current': 3395.676, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.978, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.896, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.838, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.986, 'min': 1500.0, 'max': 2250.0}, {'current': 1710.73, 'min': 1500.0, 'max': 2250.0}, {'current': 1435.851, 'min': 1500.0, 'max': 2250.0}, {'current': 1439.942, 'min': 1500.0, 'max': 2250.0}, {'current': 1395.032, 'min': 1500.0, 'max': 2250.0}, {'current': 2366.304, 'min': 1500.0, 'max': 2250.0}, {'current': 1993.414, 'min': 1500.0, 'max': 2250.0}, {'current': 1571.594, 'min': 1500.0, 'max': 2250.0}, {'current': 1335.125, 'min': 1500.0, 'max': 2250.0}, {'current': 1429.96, 'min': 1500.0, 'max': 2250.0}, {'current': 1700.315, 'min': 1500.0, 'max': 2250.0}, {'current': 1697.749, 'min': 1500.0, 'max': 2250.0}, {'current': 1433.998, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.934, 'min': 1500.0, 'max': 2250.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.989, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.922, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.898, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.857, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.981, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.877, 'min': 1500.0, 'max': 2250.0}, {'current': 1379.932, 'min': 1500.0, 'max': 2250.0}, {'current': 1412.05, 'min': 1500.0, 'max': 2250.0}, {'current': 1417.463, 'min': 1500.0, 'max': 2250.0}, {'current': 1612.769, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.894, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.862, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.934, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.86, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.953, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.963, 'min': 1500.0, 'max': 2250.0}, {'current': 1500.003, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.954, 'min': 1500.0, 'max': 2250.0}, {'current': 1526.237, 'min': 1500.0, 'max': 2250.0}, {'current': 1988.214, 'min': 1500.0, 'max': 2250.0}, {'current': 1335.439, 'min': 1500.0, 'max': 2250.0}, {'current': 1415.082, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.935, 'min': 1500.0, 'max': 2250.0}, {'current': 1500.003, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.94, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.924, 'min': 1500.0, 'max': 2250.0}, {'current': 1333.116, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.838, 'min': 1500.0, 'max': 2250.0}, {'current': 1333.146, 'min': 1500.0, 'max': 2250.0}, {'current': 1987.937, 'min': 1500.0, 'max': 2250.0}, {'current': 3400.044, 'min': 1500.0, 'max': 2250.0}, {'current': 1510.927, 'min': 1500.0, 'max': 2250.0}, {'current': 1538.883, 'min': 1500.0, 'max': 2250.0}, {'current': 1511.05, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.859, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.855, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.89, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.5, 'min': 1500.0, 'max': 2250.0}, {'current': 1355.877, 'min': 1500.0, 'max': 2250.0}, {'current': 1939.47, 'min': 1500.0, 'max': 2250.0}, {'current': 1355.552, 'min': 1500.0, 'max': 2250.0}, {'current': 1355.144, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.409, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.498, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.182, 'min': 1500.0, 'max': 2250.0}, {'current': 1499.463, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.217, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.361, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.36, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.34, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.226, 'min': 1500.0, 'max': 2250.0}, {'current': 1331.973, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.276, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.348, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.305, 'min': 1500.0, 'max': 2250.0}, {'current': 1997.937, 'min': 1500.0, 'max': 2250.0}, {'current': 1842.09, 'min': 1500.0, 'max': 2250.0}, {'current': 1997.944, 'min': 1500.0, 'max': 2250.0}, {'current': 1997.572, 'min': 1500.0, 'max': 2250.0}, {'current': 1996.485, 'min': 1500.0, 'max': 2250.0}, {'current': 1996.711, 'min': 1500.0, 'max': 2250.0}, {'current': 1996.567, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.304, 'min': 1500.0, 'max': 2250.0}, {'current': 1346.816, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.355, 'min': 1500.0, 'max': 2250.0}, {'current': 1844.54, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.185, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.302, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.352, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.311, 'min': 1500.0, 'max': 2250.0}, {'current': 1998.298, 'min': 1500.0, 'max': 2250.0}, {'current': 1346.849, 'min': 1500.0, 'max': 2250.0}, {'current': 1347.076, 'min': 1500.0, 'max': 2250.0}, {'current': 1347.083, 'min': 1500.0, 'max': 2250.0}, {'current': 1331.964, 'min': 1500.0, 'max': 2250.0}, {'current': 1332.101, 'min': 1500.0, 'max': 2250.0}, {'current': 1332.099, 'min': 1500.0, 'max': 2250.0}, {'current': 1997.877, 'min': 1500.0, 'max': 2250.0}, {'current': 1563.71, 'min': 1500.0, 'max': 2250.0}, {'current': 1334.893, 'min': 1500.0, 'max': 2250.0}, {'current': 1988.776, 'min': 1500.0, 'max': 2250.0}, {'current': 1992.335, 'min': 1500.0, 'max': 2250.0}, {'current': 1992.258, 'min': 1500.0, 'max': 2250.0}, {'current': 1334.8, 'min': 1500.0, 'max': 2250.0}, {'current': 1992.271, 'min': 1500.0, 'max': 2250.0}, {'current': 1989.145, 'min': 1500.0, 'max': 2250.0}, {'current': 1334.908, 'min': 1500.0, 'max': 2250.0}, {'current': 1987.224, 'min': 1500.0, 'max': 2250.0}, {'current': 1949.585, 'min': 1500.0, 'max': 2250.0}, {'current': 1571.052, 'min': 1500.0, 'max': 2250.0}, {'current': 1989.091, 'min': 1500.0, 'max': 2250.0}, {'current': 1989.479, 'min': 1500.0, 'max': 2250.0}, {'current': 1986.291, 'min': 1500.0, 'max': 2250.0}, {'current': 1533.149, 'min': 1500.0, 'max': 2250.0}, {'current': 1980.977, 'min': 1500.0, 'max': 2250.0}, {'current': 1333.302, 'min': 1500.0, 'max': 2250.0}, {'current': 1982.782, 'min': 1500.0, 'max': 2250.0}, {'current': 1988.642, 'min': 1500.0, 'max': 2250.0}, {'current': 1723.55, 'min': 1500.0, 'max': 2250.0}, {'current': 1714.82, 'min': 1500.0, 'max': 2250.0}, {'current': 1539.933, 'min': 1500.0, 'max': 2250.0}, {'current': 1729.646, 'min': 1500.0, 'max': 2250.0}, {'current': 1417.998, 'min': 1500.0, 'max': 2250.0}, {'current': 1713.569, 'min': 1500.0, 'max': 2250.0}, {'current': 1521.799, 'min': 1500.0, 'max': 2250.0}, {'current': 1489.42, 'min': 1500.0, 'max': 2250.0}, {'current': 1510.995, 'min': 1500.0, 'max': 2250.0}, {'current': 1767.283, 'min': 1500.0, 'max': 2250.0}, {'current': 1768.837, 'min': 1500.0, 'max': 2250.0}, {'current': 3399.559, 'min': 1500.0, 'max': 2250.0}], 'disk': {'/': {'total': 1.0, 'used': 0.004306793212890625}}, 'gpu': 'NVIDIA A100-SXM4-40GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA A100-SXM4-40GB', 'memory_total': 42949672960}], 'memory': {'total': 503.78640365600586}}
+2024-05-02 17:40:50,729 INFO    HandlerThread:237128 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-02 17:40:50,729 INFO    HandlerThread:237128 [system_monitor.py:probe():227] Publishing system info
+2024-05-02 17:40:50,729 DEBUG   HandlerThread:237128 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-05-02 17:40:50,731 DEBUG   HandlerThread:237128 [system_info.py:_save_pip():68] Saving pip packages done
+2024-05-02 17:40:50,731 DEBUG   HandlerThread:237128 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-05-02 17:40:50,734 ERROR   HandlerThread:237128 [system_info.py:_save_conda():86] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/site-packages/wandb/sdk/internal/system/system_info.py", line 82, in _save_conda
+    subprocess.call(
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/subprocess.py", line 345, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/abdelrahman.sadallah/mambaforge/envs/nlp/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2024-05-02 17:40:50,735 DEBUG   HandlerThread:237128 [system_info.py:_save_conda():87] Saving conda packages done
+2024-05-02 17:40:50,740 INFO    HandlerThread:237128 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-02 17:40:50,751 DEBUG   SenderThread:237128 [sender.py:send():380] send: files
+2024-05-02 17:40:50,751 INFO    SenderThread:237128 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2024-05-02 17:40:50,761 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:40:50,761 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:40:50,762 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:40:51,150 DEBUG   SenderThread:237128 [sender.py:send():380] send: telemetry
+2024-05-02 17:40:51,431 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_created():271] file/dir created: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/wandb-metadata.json
+2024-05-02 17:40:51,432 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_created():271] file/dir created: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/conda-environment.yaml
+2024-05-02 17:40:51,432 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_created():271] file/dir created: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/requirements.txt
+2024-05-02 17:40:52,037 INFO    wandb-upload_0:237128 [upload_job.py:push():131] Uploaded file /tmp/slurm-abdelrahman.sadallah-416620/tmph7m59wstwandb/vv7xrx97-wandb-metadata.json
+2024-05-02 17:40:55,151 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:40:56,434 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_created():271] file/dir created: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:40:58,436 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:41:01,121 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:41:05,760 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:41:05,761 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:41:05,763 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:41:07,053 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:41:12,053 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:41:17,054 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:41:20,760 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:41:20,761 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:41:20,764 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:41:22,110 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:41:22,457 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/config.yaml
+2024-05-02 17:41:27,359 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:41:32,360 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:41:35,760 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:41:35,761 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:41:35,807 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:41:37,999 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:41:43,000 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:41:48,001 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:41:50,565 DEBUG   SystemMonitor:237128 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-02 17:41:50,570 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:41:50,760 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:41:50,761 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:41:50,763 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:41:53,018 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:41:58,019 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:42:03,019 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:42:05,761 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:42:05,761 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:42:05,763 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:42:10,587 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:42:13,493 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:42:15,589 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:42:20,576 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:42:20,761 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:42:20,761 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:42:20,764 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:42:20,996 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:42:25,997 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:42:30,998 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:42:35,761 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:42:35,762 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:42:35,765 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:42:36,062 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:42:41,062 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:42:46,063 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:42:50,581 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:42:50,761 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:42:50,761 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:42:50,764 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:42:50,796 WARNING FileStreamThread:237128 [file_stream.py:request_with_retry():668] requests_with_retry encountered retryable exception: 502 Server Error: Bad Gateway for url: https://api.wandb.ai/files/bodasadallah2/nadi_sharedtask/3lhkfyeh/file_stream. func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x14d75492a740>>, timeout=180), args: ('https://api.wandb.ai/files/bodasadallah2/nadi_sharedtask/3lhkfyeh/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 0, 'content': ['{"system.proc.memory.availableMB": 458619.56, "system.memory": 11.1, "system.proc.memory.rssMB": 2265.94, "system.proc.memory.percent": 0.44, "system.network.sent": 266127.47, "system.network.recv": 4638432.67, "system.cpu": 0.01, "system.cpu.0.cpu_percent": 4.04, "system.cpu.1.cpu_percent": 2.97, "system.cpu.2.cpu_percent": 2.97, "system.cpu.3.cpu_percent": 3.11, "system.cpu.4.cpu_percent": 4.99, "system.cpu.5.cpu_percent": 3.21, "system.cpu.6.cpu_percent": 3.13, "system.cpu.7.cpu_percent": 3.03, "system.cpu.8.cpu_percent": 3.32, "system.cpu.9.cpu_percent": 3.99, "system.cpu.10.cpu_percent": 4.52, "system.cpu.11.cpu_percent": 3.17, "system.cpu.12.cpu_percent": 3.11, "system.cpu.13.cpu_percent": 5.67, "system.cpu.14.cpu_percent": 4.09, "system.cpu.15.cpu_percent": 2.85, "system.cpu.16.cpu_percent": 2.87, "system.cpu.17.cpu_percent": 2.84, "system.cpu.18.cpu_percent": 2.57, "system.cpu.19.cpu_percent": 2.91, "system.cpu.20.cpu_percent": 2.84, "system.cpu.21.cpu_percent": 2.8, "system.cpu.22.cpu_percent": 2.9, "system.cpu.23.cpu_percent": 2.84, "system.cpu.24.cpu_percent": 2.87, "system.cpu.25.cpu_percent": 2.94, "system.cpu.26.cpu_percent": 2.87, "system.cpu.27.cpu_percent": 4.25, "system.cpu.28.cpu_percent": 2.74, "system.cpu.29.cpu_percent": 2.84, "system.cpu.30.cpu_percent": 2.94, "system.cpu.31.cpu_percent": 2.91, "system.cpu.32.cpu_percent": 2.7, "system.cpu.33.cpu_percent": 2.84, "system.cpu.34.cpu_percent": 1.91, "system.cpu.35.cpu_percent": 2.87, "system.cpu.36.cpu_percent": 5.35, "system.cpu.37.cpu_percent": 4.2, "system.cpu.38.cpu_percent": 3.21, "system.cpu.39.cpu_percent": 5.15, "system.cpu.40.cpu_percent": 2.54, "system.cpu.41.cpu_percent": 2.91, "system.cpu.42.cpu_percent": 3.17, "system.cpu.43.cpu_percent": 2.54, "system.cpu.44.cpu_percent": 3.47, "system.cpu.45.cpu_percent": 11.29, "system.cpu.46.cpu_percent": 12.13, "system.cpu.47.cpu_percent": 14.38, "system.cpu.48.cpu_percent": 33.36, "system.cpu.49.cpu_percent": 3.07, "system.cpu.50.cpu_percent": 4.49, "system.cpu.51.cpu_percent": 3.41, "system.cpu.52.cpu_percent": 2.87, "system.cpu.53.cpu_percent": 2.94, "system.cpu.54.cpu_percent": 2.87, "system.cpu.55.cpu_percent": 2.87, "system.cpu.56.cpu_percent": 2.14, "system.cpu.57.cpu_percent": 4.79, "system.cpu.58.cpu_percent": 2.71, "system.cpu.59.cpu_percent": 2.91, "system.cpu.60.cpu_percent": 2.74, "system.cpu.61.cpu_percent": 2.91, "system.cpu.62.cpu_percent": 2.84, "system.cpu.63.cpu_percent": 2.94, "system.cpu.64.cpu_percent": 6.76, "system.cpu.65.cpu_percent": 6.73, "system.cpu.66.cpu_percent": 6.43, "system.cpu.67.cpu_percent": 6.73, "system.cpu.68.cpu_percent": 6.67, "system.cpu.69.cpu_percent": 4.92, "system.cpu.70.cpu_percent": 6.27, "system.cpu.71.cpu_percent": 6.95, "system.cpu.72.cpu_percent": 6.27, "system.cpu.73.cpu_percent": 6.4, "system.cpu.74.cpu_percent": 6.57, "system.cpu.75.cpu_percent": 6.6, "system.cpu.76.cpu_percent": 43.48, "system.cpu.77.cpu_percent": 13.66, "system.cpu.78.cpu_percent": 6.63, "system.cpu.79.cpu_percent": 6.67, "system.cpu.80.cpu_percent": 6.77, "system.cpu.81.cpu_percent": 6.69, "system.cpu.82.cpu_percent": 6.86, "system.cpu.83.cpu_percent": 6.48, "system.cpu.84.cpu_percent": 7.48, "system.cpu.85.cpu_percent": 6.1, "system.cpu.86.cpu_percent": 4.75, "system.cpu.87.cpu_percent": 6.17, "system.cpu.88.cpu_percent": 6.8, "system.cpu.89.cpu_percent": 5.11, "system.cpu.90.cpu_percent": 5.18, "system.cpu.91.cpu_percent": 5.31, "system.cpu.92.cpu_percent": 5.01, "system.cpu.93.cpu_percent": 5.6, "system.cpu.94.cpu_percent": 6.06, "system.cpu.95.cpu_percent": 6.03, "system.cpu.96.cpu_percent": 3.09, "system.cpu.97.cpu_percent": 3.07, "system.cpu.98.cpu_percent": 2.64, "system.cpu.99.cpu_percent": 3.11, "system.cpu.100.cpu_percent": 3.04, "system.cpu.101.cpu_percent": 3.37, "system.cpu.102.cpu_percent": 3.01, "system.cpu.103.cpu_percent": 3.37, "system.cpu.104.cpu_percent": 3.01, "system.cpu.105.cpu_percent": 3.07, "system.cpu.106.cpu_percent": 3.05, "system.cpu.107.cpu_percent": 3.11, "system.cpu.108.cpu_percent": 3.18, "system.cpu.109.cpu_percent": 3.04, "system.cpu.110.cpu_percent": 3.11, "system.cpu.111.cpu_percent": 3.07, "system.cpu.112.cpu_percent": 4.85, "system.cpu.113.cpu_percent": 3.19, "system.cpu.114.cpu_percent": 3.59, "system.cpu.115.cpu_percent": 3.01, "system.cpu.116.cpu_percent": 3.04, "system.cpu.117.cpu_percent": 3.01, "system.cpu.118.cpu_percent": 3.07, "system.cpu.119.cpu_percent": 3.52, "system.cpu.120.cpu_percent": 3.11, "system.cpu.121.cpu_percent": 3.04, "system.cpu.122.cpu_percent": 3.07, "system.cpu.123.cpu_percent": 3.55, "system.cpu.124.cpu_percent": 3.19, "system.cpu.125.cpu_percent": 3.15, "system.cpu.126.cpu_percent": 4.13, "system.cpu.127.cpu_percent": 22.08, "system.cpu.128.cpu_percent": 4.85, "system.cpu.129.cpu_percent": 3.67, "system.cpu.130.cpu_percent": 3.01, "system.cpu.131.cpu_percent": 3.01, "system.cpu.132.cpu_percent": 5.89, "system.cpu.133.cpu_percent": 2.93, "system.cpu.134.cpu_percent": 2.97, "system.cpu.135.cpu_percent": 2.87, "system.cpu.136.cpu_percent": 3.52, "system.cpu.137.cpu_percent": 3.25, "system.cpu.138.cpu_percent": 3.51, "system.cpu.139.cpu_percent": 2.91, "system.cpu.140.cpu_percent": 2.81, "system.cpu.141.cpu_percent": 2.6, "system.cpu.142.cpu_percent": 2.91, "system.cpu.143.cpu_percent": 2.92, "system.cpu.144.cpu_percent": 2.87, "system.cpu.145.cpu_percent": 3.94, "system.cpu.146.cpu_percent": 2.37, "system.cpu.147.cpu_percent": 2.81, "system.cpu.148.cpu_percent": 2.81, "system.cpu.149.cpu_percent": 2.83, "system.cpu.150.cpu_percent": 4.76, "system.cpu.151.cpu_percent": 2.84, "system.cpu.152.cpu_percent": 3.14, "system.cpu.153.cpu_percent": 2.61, "system.cpu.154.cpu_percent": 2.87, "system.cpu.155.cpu_percent": 4.1, "system.cpu.156.cpu_percent": 2.91, "system.cpu.157.cpu_percent": 2.73, "system.cpu.158.cpu_percent": 3.31, "system.cpu.159.cpu_percent": 2.9, "system.cpu.160.cpu_percent": 2.74, "system.cpu.161.cpu_percent": 2.84, "system.cpu.162.cpu_percent": 1.87, "system.cpu.163.cpu_percent": 2.61, "system.cpu.164.cpu_percent": 3.71, "system.cpu.165.cpu_percent": 5.45, "system.cpu.166.cpu_percent": 3.31, "system.cpu.167.cpu_percent": 3.27, "system.cpu.168.cpu_percent": 4.22, "system.cpu.169.cpu_percent": 3.21, "system.cpu.170.cpu_percent": 2.37, "system.cpu.171.cpu_percent": 3.24, "system.cpu.172.cpu_percent": 8.88, "system.cpu.173.cpu_percent": 45.45, "system.cpu.174.cpu_percent": 19.57, "system.cpu.175.cpu_percent": 4.34, "system.cpu.176.cpu_percent": 62.49, "system.cpu.177.cpu_percent": 2.98, "system.cpu.178.cpu_percent": 2.97, "system.cpu.179.cpu_percent": 3.44, "system.cpu.180.cpu_percent": 2.87, "system.cpu.181.cpu_percent": 2.91, "system.cpu.182.cpu_percent": 2.87, "system.cpu.183.cpu_percent": 2.87, "system.cpu.184.cpu_percent": 2.14, "system.cpu.185.cpu_percent": 4.52, "system.cpu.186.cpu_percent": 2.87, "system.cpu.187.cpu_percent": 2.77, "system.cpu.188.cpu_percent": 2.95, "system.cpu.189.cpu_percent": 3.41, "system.cpu.190.cpu_percent": 4.25, "system.cpu.191.cpu_percent": 2.87, "system.cpu.192.cpu_percent": 6.87, "system.cpu.193.cpu_percent": 6.73, "system.cpu.194.cpu_percent": 7.73, "system.cpu.195.cpu_percent": 7.54, "system.cpu.196.cpu_percent": 6.79, "system.cpu.197.cpu_percent": 5.17, "system.cpu.198.cpu_percent": 6.66, "system.cpu.199.cpu_percent": 6.62, "system.cpu.200.cpu_percent": 7.3, "system.cpu.201.cpu_percent": 7.13, "system.cpu.202.cpu_percent": 7.45, "system.cpu.203.cpu_percent": 7.77, "system.cpu.204.cpu_percent": 43.13, "system.cpu.205.cpu_percent": 7.92, "system.cpu.206.cpu_percent": 6.57, "system.cpu.207.cpu_percent": 6.63, "system.cpu.208.cpu_percent": 6.83, "system.cpu.209.cpu_percent": 5.99, "system.cpu.210.cpu_percent": 6.87, "system.cpu.211.cpu_percent": 5.8, "system.cpu.212.cpu_percent": 6.53, "system.cpu.213.cpu_percent": 5.93, "system.cpu.214.cpu_percent": 5.76, "system.cpu.215.cpu_percent": 7.03, "system.cpu.216.cpu_percent": 6.37, "system.cpu.217.cpu_percent": 5.21, "system.cpu.218.cpu_percent": 5.27, "system.cpu.219.cpu_percent": 5.25, "system.cpu.220.cpu_percent": 4.95, "system.cpu.221.cpu_percent": 5.83, "system.cpu.222.cpu_percent": 5.53, "system.cpu.223.cpu_percent": 6.14, "system.cpu.224.cpu_percent": 3.57, "system.cpu.225.cpu_percent": 3.07, "system.cpu.226.cpu_percent": 2.64, "system.cpu.227.cpu_percent": 3.07, "system.cpu.228.cpu_percent": 3.01, "system.cpu.229.cpu_percent": 3.07, "system.cpu.230.cpu_percent": 2.47, "system.cpu.231.cpu_percent": 3.01, "system.cpu.232.cpu_percent": 3.55, "system.cpu.233.cpu_percent": 3.11, "system.cpu.234.cpu_percent": 3.09, "system.cpu.235.cpu_percent": 3.11, "system.cpu.236.cpu_percent": 3.21, "system.cpu.237.cpu_percent": 3.04, "system.cpu.238.cpu_percent": 3.11, "system.cpu.239.cpu_percent": 3.11, "system.cpu.240.cpu_percent": 3.11, "system.cpu.241.cpu_percent": 3.99, "system.cpu.242.cpu_percent": 4.01, "system.cpu.243.cpu_percent": 3.47, "system.cpu.244.cpu_percent": 3.01, "system.cpu.245.cpu_percent": 3.01, "system.cpu.246.cpu_percent": 3.04, "system.cpu.247.cpu_percent": 2.94, "system.cpu.248.cpu_percent": 3.07, "system.cpu.249.cpu_percent": 3.04, "system.cpu.250.cpu_percent": 3.62, "system.cpu.251.cpu_percent": 3.01, "system.cpu.252.cpu_percent": 3.79, "system.cpu.253.cpu_percent": 3.32, "system.cpu.254.cpu_percent": 3.67, "system.cpu.255.cpu_percent": 66.91, "system.proc.cpu.threads": 159, "system.disk.\\\\.usagePercent": 0.4, "system.disk.\\\\.usageGB": 0.0, "system.disk.in": 0.0, "system.disk.out": 0.63, "system.gpu.0.memoryAllocated": 21.13, "system.gpu.0.memoryAllocatedBytes": 9075818496.0, "system.gpu.0.memory": 7.27, "system.gpu.0.gpu": 28.67, "system.gpu.0.temp": 29.53, "system.gpu.0.powerWatts": 82.37, "system.gpu.0.powerPercent": 20.59, "_wandb": true, "_timestamp": 1714657310.565876, "_runtime": 60.782381}']}}, 'dropped': 0}}
+2024-05-02 17:42:51,112 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:42:56,113 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:43:01,114 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:43:05,761 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:43:05,762 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:43:05,807 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:43:07,038 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:43:12,039 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:43:17,039 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:43:20,584 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:43:20,764 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:43:20,764 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:43:20,765 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:43:23,025 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:43:28,025 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:43:33,026 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:43:35,762 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:43:35,762 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:43:35,765 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:43:38,091 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:43:43,092 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:43:48,092 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:43:50,587 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:43:50,762 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:43:50,762 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:43:50,807 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:43:54,039 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:43:59,114 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:43:59,571 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:44:04,114 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:44:05,762 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:44:05,763 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:44:05,766 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:44:10,101 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:44:15,102 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:44:20,103 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:44:20,591 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:44:20,762 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:44:20,763 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:44:20,765 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:44:25,162 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:44:30,163 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:44:35,762 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:44:35,763 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:44:35,765 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:44:36,079 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:44:37,616 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:44:41,080 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:44:46,081 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:44:50,596 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:44:50,762 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:44:50,763 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:44:50,765 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:44:51,091 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:44:56,092 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:45:01,107 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:45:05,763 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:45:05,763 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:45:05,767 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:45:07,079 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:45:12,079 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:45:17,080 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:45:20,599 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:45:20,763 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:45:20,763 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:45:20,817 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:45:23,059 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:45:28,060 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:45:33,060 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:45:35,763 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:45:35,764 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:45:35,766 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:45:38,072 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:45:41,677 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:45:43,797 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:45:48,807 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:45:50,601 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:45:50,763 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:45:50,764 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:45:50,766 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:45:54,051 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:45:59,052 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:46:04,053 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:46:05,763 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:46:05,763 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:46:05,807 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:46:10,052 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:46:15,053 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:46:19,767 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:46:20,606 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:46:20,608 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:46:20,763 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:46:20,764 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:46:20,766 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:46:26,093 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:46:31,094 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:46:35,765 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:46:35,766 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:46:35,768 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:46:37,033 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:46:42,034 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:46:47,034 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:46:50,609 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:46:50,767 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:46:50,768 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:46:50,769 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:46:52,078 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:46:55,800 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:46:57,954 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:47:02,955 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:47:05,767 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:47:05,767 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:47:05,769 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:47:08,031 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:47:13,680 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:47:13,818 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:47:18,681 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:47:20,611 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:47:20,767 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:47:20,767 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:47:20,768 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:47:24,488 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:47:25,829 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:47:29,489 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:47:34,490 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:47:35,767 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:47:35,767 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:47:35,768 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:47:37,841 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:47:40,019 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:47:45,020 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:47:47,851 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:47:50,202 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:47:50,616 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:47:50,767 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:47:50,768 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:47:50,768 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:47:56,055 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:47:59,862 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:48:01,612 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:48:05,767 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:48:05,768 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:48:05,768 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:48:07,013 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:48:11,873 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:48:12,410 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:48:15,876 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:48:17,435 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:48:19,880 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:48:20,623 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:48:20,771 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:48:20,773 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:48:20,774 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:48:21,246 DEBUG   SenderThread:237128 [sender.py:send():380] send: config
+2024-05-02 17:48:21,247 DEBUG   SenderThread:237128 [sender.py:send():380] send: metric
+2024-05-02 17:48:21,247 DEBUG   SenderThread:237128 [sender.py:send():380] send: telemetry
+2024-05-02 17:48:21,247 DEBUG   SenderThread:237128 [sender.py:send():380] send: metric
+2024-05-02 17:48:21,247 WARNING SenderThread:237128 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2024-05-02 17:48:21,248 DEBUG   SenderThread:237128 [sender.py:send():380] send: telemetry
+2024-05-02 17:48:21,248 DEBUG   SenderThread:237128 [sender.py:send():380] send: telemetry
+2024-05-02 17:48:21,248 DEBUG   SenderThread:237128 [sender.py:send():380] send: config
+2024-05-02 17:48:21,882 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:48:23,249 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:48:23,884 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:48:25,949 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-02 17:48:25,949 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: log_artifact
+2024-05-02 17:48:27,997 INFO    wandb-upload_3:237128 [upload_job.py:push():86] Skipped uploading /home/abdelrahman.sadallah/.local/share/wandb/artifacts/staging/tmp9ao7ba81
+2024-05-02 17:48:28,572 INFO    wandb-upload_1:237128 [upload_job.py:push():89] Uploaded file /home/abdelrahman.sadallah/.local/share/wandb/artifacts/staging/tmpwnwcy60r
+2024-05-02 17:48:28,598 INFO    wandb-upload_0:237128 [upload_job.py:push():89] Uploaded file /home/abdelrahman.sadallah/.local/share/wandb/artifacts/staging/tmppebdhm9w
+2024-05-02 17:48:35,768 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-02 17:48:35,768 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:48:41,769 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:48:46,770 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:48:50,768 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:48:55,771 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:49:00,772 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:49:05,769 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:49:10,773 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:49:14,705 INFO    wandb-upload_2:237128 [upload_job.py:push():89] Uploaded file /home/abdelrahman.sadallah/.local/share/wandb/artifacts/staging/tmpyvmc363r
+2024-05-02 17:49:15,774 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:49:20,769 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:49:21,131 INFO    SenderThread:237128 [sender.py:send_request_log_artifact():1444] logged artifact model-jais - {'id': 'QXJ0aWZhY3Q6ODE4NDU1NTQ5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2OTE1MzY3OA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODE4Mzg2OTUy', 'versionIndex': 2}}}
+2024-05-02 17:49:21,135 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:49:21,437 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: stop_status
+2024-05-02 17:49:21,513 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/config.yaml
+2024-05-02 17:49:21,762 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:49:21,765 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:49:23,515 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:25,517 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:25,776 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:49:26,871 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:49:27,520 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:29,523 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:30,777 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:49:31,524 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:31,906 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:49:33,526 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:35,528 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:35,769 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:49:37,531 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:37,548 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:49:39,533 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:40,778 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:49:41,535 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:42,771 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:49:43,538 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:45,540 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:45,780 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:49:47,543 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:48,669 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:49:49,545 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:50,638 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:49:50,769 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:49:51,547 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:53,549 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:54,545 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:49:55,551 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:55,781 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:49:57,553 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:59,555 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:49:59,652 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:50:00,782 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:50:01,557 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:03,559 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:05,561 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:05,652 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:50:05,769 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:50:07,563 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:09,565 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:10,783 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:50:10,976 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:50:11,567 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:13,569 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:15,571 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:15,784 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:50:16,061 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:50:17,573 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:19,575 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:20,642 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:50:20,769 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:50:21,579 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:21,669 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:50:23,581 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:25,583 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:25,785 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:50:27,112 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:50:27,586 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:29,588 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:30,786 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:50:31,590 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:32,819 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:50:33,592 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:35,594 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:35,769 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:50:37,596 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:38,626 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:50:39,599 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:40,788 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:50:41,601 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:43,603 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:43,980 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:50:45,605 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:45,789 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:50:47,483 DEBUG   SenderThread:237128 [sender.py:send():380] send: exit
+2024-05-02 17:50:47,483 INFO    SenderThread:237128 [sender.py:send_exit():585] handling exit code: 1
+2024-05-02 17:50:47,483 INFO    SenderThread:237128 [sender.py:send_exit():587] handling runtime: 596
+2024-05-02 17:50:47,484 INFO    SenderThread:237128 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-05-02 17:50:47,485 INFO    SenderThread:237128 [sender.py:send_exit():593] send defer
+2024-05-02 17:50:47,485 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:47,485 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-02 17:50:47,485 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:47,485 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-05-02 17:50:47,486 INFO    SenderThread:237128 [sender.py:transition_state():613] send defer: 1
+2024-05-02 17:50:47,486 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:47,486 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-02 17:50:47,486 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:47,486 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-05-02 17:50:47,486 INFO    SenderThread:237128 [sender.py:transition_state():613] send defer: 2
+2024-05-02 17:50:47,486 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:47,486 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-02 17:50:47,486 INFO    HandlerThread:237128 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-02 17:50:47,487 DEBUG   SystemMonitor:237128 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-02 17:50:47,487 DEBUG   SystemMonitor:237128 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-02 17:50:47,492 INFO    HandlerThread:237128 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-02 17:50:47,493 INFO    HandlerThread:237128 [interfaces.py:finish():202] Joined disk monitor
+2024-05-02 17:50:47,608 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:47,608 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_created():271] file/dir created: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/wandb-summary.json
+2024-05-02 17:50:47,889 INFO    HandlerThread:237128 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-02 17:50:47,889 INFO    HandlerThread:237128 [interfaces.py:finish():202] Joined memory monitor
+2024-05-02 17:50:47,890 INFO    HandlerThread:237128 [interfaces.py:finish():202] Joined network monitor
+2024-05-02 17:50:47,890 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:47,890 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-05-02 17:50:47,890 INFO    SenderThread:237128 [sender.py:transition_state():613] send defer: 3
+2024-05-02 17:50:47,891 DEBUG   SenderThread:237128 [sender.py:send():380] send: stats
+2024-05-02 17:50:47,892 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:47,893 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-02 17:50:47,893 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:47,893 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-05-02 17:50:47,893 INFO    SenderThread:237128 [sender.py:transition_state():613] send defer: 4
+2024-05-02 17:50:47,893 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:47,893 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-02 17:50:47,894 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:47,894 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-05-02 17:50:47,894 INFO    SenderThread:237128 [sender.py:transition_state():613] send defer: 5
+2024-05-02 17:50:47,894 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:47,894 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-02 17:50:47,894 DEBUG   SenderThread:237128 [sender.py:send():380] send: summary
+2024-05-02 17:50:47,896 INFO    SenderThread:237128 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-05-02 17:50:47,896 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:47,896 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-05-02 17:50:47,896 INFO    SenderThread:237128 [sender.py:transition_state():613] send defer: 6
+2024-05-02 17:50:47,897 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:47,897 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-02 17:50:47,897 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:47,897 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-05-02 17:50:47,897 INFO    SenderThread:237128 [sender.py:transition_state():613] send defer: 7
+2024-05-02 17:50:47,897 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:50:47,897 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:47,898 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-02 17:50:47,898 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:47,898 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-05-02 17:50:48,483 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-02 17:50:48,609 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/wandb-summary.json
+2024-05-02 17:50:49,170 INFO    SenderThread:237128 [sender.py:transition_state():613] send defer: 8
+2024-05-02 17:50:49,170 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: poll_exit
+2024-05-02 17:50:49,170 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:49,171 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-02 17:50:49,171 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:49,171 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-05-02 17:50:49,171 INFO    SenderThread:237128 [job_builder.py:build():281] Attempting to build job artifact
+2024-05-02 17:50:49,173 INFO    SenderThread:237128 [job_builder.py:_get_source_type():393] is repo sourced job
+2024-05-02 17:50:49,174 INFO    SenderThread:237128 [job_builder.py:build():369] adding wandb-job metadata file
+2024-05-02 17:50:49,184 INFO    SenderThread:237128 [sender.py:transition_state():613] send defer: 9
+2024-05-02 17:50:49,184 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:49,184 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-02 17:50:49,185 DEBUG   SenderThread:237128 [sender.py:send():380] send: artifact
+2024-05-02 17:50:49,484 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-02 17:50:49,609 INFO    Thread-12 :237128 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:50,682 INFO    wandb-upload_3:237128 [upload_job.py:push():86] Skipped uploading /home/abdelrahman.sadallah/.local/share/wandb/artifacts/staging/tmp5q2r2yd2
+2024-05-02 17:50:51,411 INFO    wandb-upload_1:237128 [upload_job.py:push():89] Uploaded file /home/abdelrahman.sadallah/.local/share/wandb/artifacts/staging/tmp97pf50fv
+2024-05-02 17:50:52,929 INFO    SenderThread:237128 [sender.py:send_artifact():1456] sent artifact job-git_github.com_bodasadallah_nadi_sharedtask_2024.git_finetune.py - {'id': 'QXJ0aWZhY3Q6ODE4NDU3OTM4', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2OTE0MzcyOQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODE4NDQ5MjMz', 'versionIndex': 4}}}
+2024-05-02 17:50:52,929 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:52,929 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-05-02 17:50:52,930 INFO    SenderThread:237128 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-02 17:50:53,611 INFO    SenderThread:237128 [dir_watcher.py:finish():388] scan: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files
+2024-05-02 17:50:53,612 INFO    SenderThread:237128 [dir_watcher.py:finish():402] scan save: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/requirements.txt requirements.txt
+2024-05-02 17:50:53,612 INFO    SenderThread:237128 [dir_watcher.py:finish():402] scan save: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/wandb-summary.json wandb-summary.json
+2024-05-02 17:50:53,612 INFO    SenderThread:237128 [dir_watcher.py:finish():402] scan save: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/wandb-metadata.json wandb-metadata.json
+2024-05-02 17:50:53,613 INFO    SenderThread:237128 [dir_watcher.py:finish():402] scan save: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log output.log
+2024-05-02 17:50:53,613 INFO    SenderThread:237128 [dir_watcher.py:finish():402] scan save: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/conda-environment.yaml conda-environment.yaml
+2024-05-02 17:50:53,617 INFO    SenderThread:237128 [dir_watcher.py:finish():402] scan save: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/config.yaml config.yaml
+2024-05-02 17:50:53,619 INFO    SenderThread:237128 [sender.py:transition_state():613] send defer: 10
+2024-05-02 17:50:53,620 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: poll_exit
+2024-05-02 17:50:53,620 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:53,620 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-02 17:50:53,627 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:53,627 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-05-02 17:50:53,627 INFO    SenderThread:237128 [file_pusher.py:finish():175] shutting down file pusher
+2024-05-02 17:50:54,171 INFO    wandb-upload_0:237128 [upload_job.py:push():131] Uploaded file /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/wandb-summary.json
+2024-05-02 17:50:54,402 INFO    wandb-upload_2:237128 [upload_job.py:push():131] Uploaded file /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/requirements.txt
+2024-05-02 17:50:54,486 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-02 17:50:54,489 INFO    wandb-upload_3:237128 [upload_job.py:push():131] Uploaded file /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/output.log
+2024-05-02 17:50:54,510 INFO    wandb-upload_1:237128 [upload_job.py:push():131] Uploaded file /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/files/config.yaml
+2024-05-02 17:50:54,628 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: status_report
+2024-05-02 17:50:54,711 INFO    Thread-11 (_thread_body):237128 [sender.py:transition_state():613] send defer: 11
+2024-05-02 17:50:54,711 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:54,711 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-02 17:50:54,712 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:54,712 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-05-02 17:50:54,712 INFO    SenderThread:237128 [file_pusher.py:join():181] waiting for file pusher
+2024-05-02 17:50:54,712 INFO    SenderThread:237128 [sender.py:transition_state():613] send defer: 12
+2024-05-02 17:50:54,712 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:54,712 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-02 17:50:54,712 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:54,713 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-05-02 17:50:54,713 INFO    SenderThread:237128 [file_stream.py:finish():595] file stream finish called
+2024-05-02 17:50:55,489 INFO    SenderThread:237128 [file_stream.py:finish():599] file stream finish is done
+2024-05-02 17:50:55,489 INFO    SenderThread:237128 [sender.py:transition_state():613] send defer: 13
+2024-05-02 17:50:55,490 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:55,490 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-02 17:50:55,490 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:55,490 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-05-02 17:50:55,490 INFO    SenderThread:237128 [sender.py:transition_state():613] send defer: 14
+2024-05-02 17:50:55,490 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: defer
+2024-05-02 17:50:55,491 INFO    HandlerThread:237128 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-02 17:50:55,491 DEBUG   SenderThread:237128 [sender.py:send():380] send: final
+2024-05-02 17:50:55,491 DEBUG   SenderThread:237128 [sender.py:send():380] send: footer
+2024-05-02 17:50:55,491 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: defer
+2024-05-02 17:50:55,491 INFO    SenderThread:237128 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-05-02 17:50:55,492 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-02 17:50:55,493 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: poll_exit
+2024-05-02 17:50:55,493 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: server_info
+2024-05-02 17:50:55,494 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-02 17:50:55,494 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: server_info
+2024-05-02 17:50:55,497 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-02 17:50:55,498 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-02 17:50:55,498 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: job_info
+2024-05-02 17:50:55,730 DEBUG   SenderThread:237128 [sender.py:send_request():407] send_request: job_info
+2024-05-02 17:50:55,730 INFO    MainThread:237128 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2024-05-02 17:50:55,731 INFO    MainThread:237128 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2024-05-02 17:50:55,731 INFO    MainThread:237128 [wandb_run.py:_footer_sync_info():3558] logging synced files
+2024-05-02 17:50:55,731 DEBUG   HandlerThread:237128 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-02 17:50:55,731 INFO    HandlerThread:237128 [handler.py:finish():866] shutting down handler
+2024-05-02 17:50:56,499 INFO    WriterThread:237128 [datastore.py:close():294] close: /home/abdelrahman.sadallah/mbzuai/nadi_sharedtask_2024/wandb/run-20240502_174049-3lhkfyeh/run-3lhkfyeh.wandb
+2024-05-02 17:50:56,730 INFO    SenderThread:237128 [sender.py:finish():1534] shutting down sender
+2024-05-02 17:50:56,730 INFO    SenderThread:237128 [file_pusher.py:finish():175] shutting down file pusher
+2024-05-02 17:50:56,731 INFO    SenderThread:237128 [file_pusher.py:join():181] waiting for file pusher
